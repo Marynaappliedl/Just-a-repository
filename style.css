@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #c0268a;
+  padding: 20px 15px;
+  font-family: "Apple Chancery", cursive;
+}
+
+.header a {
+  float: left; /* Align links horizontally */
+  color: black;
+  text-align: center;
+  padding: 15px; /* Adjusted padding for better spacing */
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 1.2;
+  border-radius: 0;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* If a user hovers on any of the sections, the text becomes blue */
+.header a:hover {
+  color: #0c356a;
+  text-decoration: none;
+}
+
+/* If a user clicks on a link, the text becomes white */
+.header a:active {
+  color: white;
+}
+
+/* Make sure the website is responsive on smaller screens */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none; /* Stacked links for smaller screens */
+    display: block;
+    text-align: center;
+  }
+
+  .header .subheader {
+    float: none;
+  }
+}
+
+
+
+/* If images are hovered, enlarge them */
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover {
+  width: 60%;
+  height: auto;
+  transition: width 0.5s ease; /* Removed quotes around 'width' */
+}
+
+/* Create a footer */
+footer {
+  color: rgba(20, 20, 20, 0.888);
+  background-color: #c0268a;
+}
+
+/* Custom scrollbar styling */
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #fff3e2;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(#c0268a, #fff3e2);
+}
